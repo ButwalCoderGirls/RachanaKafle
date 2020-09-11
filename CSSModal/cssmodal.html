@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W3.CSS Modal</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+    <div class="w3-container">
+      <button onclick="document.getElementById('id1').style.display='block'" class="w3-button w3-blue">Click Me!!</button>
+    </div>
+
+    <div class="w3-modal" id="id1">
+        <div class="w3-modal-content w3-animate-top">
+            <header class="w3-container w3-teal">
+                <span onclick="document.getElementById('id1').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+               <h1>Hello There...!!!</h1> 
+            </header>
+            <div class="w3-container">
+               <img src="./image/me.jpg" style="width: 25%; margin-left: 300px;" class="w3-circle w3-margin-top" alt="This is me">
+               <form class="w3-container">
+                   <div class="w3-section">
+                       <label><b>Username</b></label>
+                       <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username" name="usrname" required>
+                       <label><b>Password</b></label>
+                       <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Password" name="psw" required>
+                       <button class="w3-button w3-block w3-green w3-section w3-padding" type="submit">Submit</button>
+                   </div>
+                </form>
+                
+            </div>
+            <div class="w3-container w3-light-grey w3-padding">
+                <button class="w3-button w3-left w3-red w3-border" onclick="document.getElementById('id1').style.display='none'" type="button">Cancel</button>
+               <button class="w3-button w3-right w3-white w3-border" onclick="document.getElementById('id1').style.display='none'">Close</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
