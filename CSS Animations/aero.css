@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.sky{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: #00b4ff;
+    overflow-x: hidden;
+
+}
+
+.clouds{
+    position: absolute;
+    top: 30px;
+    height: 100px;
+    right: 0;
+    left: -2000px;
+    width: 500%;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ5mVrmh-XCTUS-T1-E8IzjlOMF-bhZIZbHeA&usqp=CAU);
+    background-repeat: repeat-x;
+    animation: clouds 50s linear infinite;
+
+}
+
+@keyframes clouds{
+    100%{
+        transform: translateX(2000px);
+    }
+}
+
+
+.mountains{
+    position: absolute;
+    bottom:0;
+    height: 180px;
+    right: 0;
+    left: -2000px;
+    width: 500%;
+    background-image: url(https://image.shutterstock.com/image-vector/vector-mountain-landscape-trees-mountains-260nw-1006713046.jpg);
+    background-repeat: repeat-x;
+    animation: mountains 20s linear infinite;
+
+}
+
+@keyframes mountains{
+    100%{
+        transform: translateX(2000px);
+    }
+}
+
+.aero{
+    top: 180px;
+    left: 40%;
+    position: absolute;
+
+}
